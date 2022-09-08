@@ -23,6 +23,7 @@ body {
 }
 
 #display {
+    user-select: none;
     margin: auto;
     width: 90%;
     height: 90px;
@@ -33,14 +34,24 @@ body {
     background-color: rgb(54, 56, 61);
     border-radius: 20px;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px;
     color:aliceblue;
-    font-size: 28px;
+    font-size: 30px;
     box-shadow: 5px 5px 2px rgb(41, 45, 49);
+    gap: 4px;
 }
 
+#mainDisplay {
+    max-height: 100%;
+}
+#sndDisplay {
+    font-size: 16px;
+    color:rgb(189, 223, 255);
+    max-height: 16px;
+    max-width: 240px;
+}
 #numpad {
     margin: auto;
     gap: 15px;
@@ -50,6 +61,7 @@ body {
 }
 
 .button {
+    user-select: none;
     min-width: 60px;
     min-height: 60px;
     margin: auto;
