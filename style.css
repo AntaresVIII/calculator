@@ -45,12 +45,19 @@ body {
 
 #mainDisplay {
     max-height: 100%;
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #sndDisplay {
     font-size: 16px;
     color:rgb(189, 223, 255);
-    max-height: 16px;
-    max-width: 240px;
+    height: 16px;
+    max-width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #numpad {
     margin: auto;
